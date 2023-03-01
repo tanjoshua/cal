@@ -148,7 +148,7 @@ export default class ExchangeCalendarService implements Calendar {
         }
       }
 
-      const finaleRet = [];
+      const finaleRet: any[] = [];
       for (let i = 0; i < calendarsToGetAppointmentsFrom.length; i++) {
         const calendarFolderId = new FolderId(calendarsToGetAppointmentsFrom[i].externalId);
         const localReturn = await this.getExchangeService()
