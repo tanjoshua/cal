@@ -196,7 +196,7 @@ const appRoutingForms = router({
       },
     });
 
-    const serializableForms: any[] = [];
+    const serializableForms = [];
     for (let i = 0; i < forms.length; i++) {
       serializableForms.push(await getSerializableForm(forms[i]));
     }

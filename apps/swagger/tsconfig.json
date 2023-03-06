@@ -1,7 +1,6 @@
 {
   "extends": "@calcom/tsconfig/nextjs.json",
   "compilerOptions": {
-    "noImplicitAny": false,
     "baseUrl": ".",
     "paths": {
       "@lib/*": ["lib/*"]

@@ -138,7 +138,7 @@ export default class ExchangeCalendarService implements Calendar {
   ): Promise<EventBusyDate[]> {
     try {
       const externalCalendars = await this.listCalendars();
-      const calendarsToGetAppointmentsFrom: any[] = [];
+      const calendarsToGetAppointmentsFrom = [];
       for (let i = 0; i < selectedCalendars.length; i++) {
         //Only select vaild calendars! (We get all all active calendars on the instance! even from different users!)
         for (let k = 0; k < externalCalendars.length; k++) {
@@ -148,7 +148,7 @@ export default class ExchangeCalendarService implements Calendar {
         }
       }
 
-      const finaleRet: any[] = [];
+      const finaleRet = [];
       for (let i = 0; i < calendarsToGetAppointmentsFrom.length; i++) {
         const calendarFolderId = new FolderId(calendarsToGetAppointmentsFrom[i].externalId);
         const localReturn = await this.getExchangeService()

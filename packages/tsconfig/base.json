@@ -14,7 +14,9 @@
     "noUnusedParameters": false,
     "preserveWatchOutput": true,
     "skipLibCheck": true,
-    "strict": true
+    "strict": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false
   },
   "exclude": ["node_modules"],
   "ts-node": {
