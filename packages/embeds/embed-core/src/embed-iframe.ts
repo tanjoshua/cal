@@ -11,10 +11,7 @@ export interface UiConfig {
 }
 declare global {
   interface Window {
-    CalEmbed: {
-      __logQueue?: any[];
-      embedStore: any;
-    };
+    CalEmbed: any;
     CalComPageStatus: string;
     isEmbed: () => boolean;
     resetEmbedStatus: () => void;
