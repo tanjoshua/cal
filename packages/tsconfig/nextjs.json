@@ -18,7 +18,6 @@
     "strict": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "strictNullChecks": true,
     "useUnknownInCatchVariables": true
   },
   "include": ["src", "next-env.d.ts", "../types/next-auth.d.ts", "../types/*.d.ts"],
